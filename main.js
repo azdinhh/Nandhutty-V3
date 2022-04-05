@@ -53,7 +53,6 @@ if (!opts['test']) setInterval(async () => {
 if (opts['server']) require('./server')(global.conn, PORT)
 
 conn.version = [3, 3234, 9]
-conn.browserDescription = [" Nandhutty V3 ", "safari", "3.0.0"];
 conn.connectOptions.maxQueryResponseTime = 60_000
 if (opts['test']) {
   conn.user = {
@@ -128,10 +127,10 @@ global.reloadHandler = function () {
     conn.off('group-update', conn.onGroupUpdate)
     conn.off('CB:action,,call', conn.onCall)
   }
-  conn.welcome = 'Hai, @user!\nWelcome to the group @subject\n\n@desc'
-  conn.bye = '@user GoodBye'
-  conn.spromote = '@user now admin'
-  conn.sdemote = '@user not admin now'
+  conn.welcome = 'هاي, @user!\nمرحبا بك في المجموعة @subject\n\n@desc'
+  conn.bye = '@user مع السلامة'
+  conn.spromote = '@user الآن مشرف'
+  conn.sdemote = '@user ليس المشرف الآن'
   conn.handler = handler.handler
   conn.onDelete = handler.delete
   conn.onParticipantsUpdate = handler.participantsUpdate
