@@ -285,11 +285,11 @@ module.exports = {
           if (xp > 200) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
           if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-            this.reply(m.chat, `Your limit is up, please buy via *${usedPrefix}buy*`, m)
+            this.reply(m.chat, `تجاوز الحد الخاص بك ، يرجى الشراء عبر *${usedPrefix}يشترى*`, m)
             continue // Limit habis
           }
           if (plugin.level > _user.level) {
-            this.reply(m.chat, `level required ${plugin.level} to use this command. Your level ${_user.level}`, m)
+            this.reply(m.chat, `المستوى المطلوب ${plugin.level} لاستخدام هذا الأمر. مستواك ${_user.level}`, m)
             continue // Jika levelnya belum tercapai
           }
           let extra = {
@@ -397,7 +397,7 @@ module.exports = {
               } catch (e) {
               } finally {
                 text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'welcome, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
-                  (chat.sBye || this.bye || conn.bye || 'See you later, @user!')).replace(/@user/g, '@' + user.split`@`[0])
+                  (chat.sBye || this.bye || conn.bye || 'أراك لاحقا, @user!')).replace(/@user/g, '@' + user.split`@`[0])
                 let wel = `https://hardianto-chan.herokuapp.com/api/welcome4?profile=${pp}&name=${encodeURIComponent(this.getName(user))}`
                 let lea = `https://hardianto-chan.herokuapp.com/api/goodbye3?profile=${pp}&name=${encodeURIComponent(this.getName(user))}&bg=https://telegra.ph/file/c996b407dbb9af2308487.jpg&namegb=${encodeURIComponent(this.getName(jid))}&member=${encodeURIComponent(groupMetadata.participants.length)}`
                 this.sendFile(jid, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, {
@@ -411,9 +411,9 @@ module.exports = {
           }
           break
       case 'promote':
-        text = (chat.sPromote || this.spromote || conn.spromote || '@current user Admin')
+        text = (chat.sPromote || this.spromote || conn.spromote || '@المستخدم الحالي ادمين')
       case 'demote':
-        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@the current user is not an admin')
+        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@المستخدم الحالي ليس مشرفًا')
         text = text.replace('@user', '@' + participants[0].split`@`[0])
         if (chat.detect) this.sendMessage(jid, text, MessageType.extendedText, {
           contextInfo: {
@@ -427,8 +427,8 @@ module.exports = {
     let chat = global.db.data.chats[m.key.remoteJid]
     if (chat.delete) return
     await this.sendButton(m.key.remoteJid, `
-    Detected @${m.participant.split`@`[0]} deleted message
-type *.on delete* to turn off this message
+    مكتشف @${m.participant.split`@`[0]} رسالة محذوفة
+اكتب *.on delete* لإيقاف هذه الرسالة
 `.trim(), '', 'Turn off Antidelete', ',on delete', m.message, {
       contextInfo: {
         mentionedJid: [m.participant]
@@ -449,7 +449,7 @@ type *.on delete* to turn off this message
         break
     }
     user.call += 1
-    await this.reply(from, `If you call more than 2, you will be blocked.\n\n${user.call} / 2`, null)
+    await this.reply(from, `إذا اتصلت بأكثر من 2 ، سيتم حظرك.\n\n${user.call} / 2`, null)
     if (user.call == 5) {
       await this.blockUser(from, 'add')
       user.call = 0
@@ -459,9 +459,9 @@ type *.on delete* to turn off this message
     if (!db.data.chats[jid].descUpdate) return
     if (!desc) return
     let caption = `
-    @${descOwner.split`@`[0]} has changed the group description.
+    @${descOwner.split`@`[0]} قام بتغيير وصف المجموعة.
     ${desc}
-    type *.off desc* to turn off this message
+    اكتب *.off desc* لإيقاف هذه الرسالة
         `.trim()
     this.sendButton(jid, caption, '', 'Turn off Description', ',off desc', { contextInfo: { mentionedJid: this.parseMention(caption) } })
 
@@ -470,16 +470,16 @@ type *.on delete* to turn off this message
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: 'This command can only be used by _*Bot Owner✅*_',
-    owner: 'This command can only be used by _*Bot Owner✅*_',
-    mods: 'This command can only be used by _*Moderator✅*_',
-    premium: 'This command is only for _*Premium users✅*_',
-    group: 'This command can only be used in groups✅',
-    private: 'This command can only be used in Private Chat✅',
-    admin: 'This command is only for *Admin* in the group✅',
-    botAdmin: 'Make bot an *Admin* to use this command✅',
-    unreg: 'Please register to use this feature by typing:\n\n*#register name.age*\n\nEXAMPLE: *#register Wizard.18*',
-    nsfw: 'NSFW is not active'
+    rowner: '*✅لا يمكن استخدام هذا الأمر إلا بواسطة_ *مطور البوت_',
+    owner: '*✅لا يمكن استخدام هذا الأمر إلا بواسطة_ *مطور البوت_',
+    mods: '✅لا يمكن استخدام هذا الأمر إلا بواسطة _ * الوسيط*_',
+    premium: '✅_*هذا الأمر مخصص فقط لمستخدمي المتميزون*_',
+    group: '✅لا يمكن استخدام هذا الأمر إلا في مجموعات',
+    private: '✅لا يمكن استخدام هذا الأمر إلا في الدردشة الخاصة',
+    admin: '✅هذا الأمر مخصص فقط لـ *ادمين* في المجموعة',
+    botAdmin: '✅اجعل بوت *ادمين* لاستخدام هذا الأمر',
+    unreg: 'الرجاء التسجيل لاستخدام هذه الميزة عن طريق الكتابة:\n\n*#register name.age*\n\nمثال: *#register azdin.18*',
+    nsfw: 'NSFW غير نشط'
   }[type]
   if (msg) return m.reply(msg)
 }
