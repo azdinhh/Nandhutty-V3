@@ -96,11 +96,11 @@ handler.all = async function (m, { isPrems }) {
         if (yt2 === false) return m.reply(eror)
         let { dl_link, thumb, title, filesize, filesizeF } = yt
         await this.send2ButtonLoc(m.chat, await (await fetch(thumb)).buffer(), `
-*Title:* ${title}
-*Audio File Size:* ${filesizeF}
-*Video File Sizeo:* ${yt2.filesizeF}
-*y2mate servers:* ${usedServer}
-`.trim(), watermark, 'ᴀᴜᴅɪᴏ🔉', `.yta ${vid.url}`, 'ᴠɪᴅᴇᴏ🎥', `.yt ${vid.url}`)
+*لقب:* ${title}
+*صوتي File Size:* ${filesizeF}
+*فيديو File Sizeo:* ${yt2.filesizeF}
+*y2mate الخوادم:* ${usedServer}
+`.trim(), watermark, 'صوتي🔉', `.yta ${vid.url}`, 'فيديو🎥', `.yt ${vid.url}`)
     }
 
 }
