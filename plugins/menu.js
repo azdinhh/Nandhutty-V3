@@ -6,32 +6,34 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-  〔 ɴᴀɴᴅʜᴜᴛᴛʏ ᴠ3 〕
-➪Hai, %name!
-➪Uptime: *%uptime (%muptime)*
-➪Developer:ᴀᴊᴍᴀʟ ᴀɴᴅ ᴀᴄʜᴜ
+━━━━ 「 *بوت الغربي* 」 ━━━━͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏
+     ✪〔 %me 〕✪
+🔸Hai, %name!
+🔸 انستغرام: [ https://instagram.com/azdi_n_1?=nametag ]
+     〘 *بوت الغربي* 〙
 %readmore`.trimStart(),
-  header: '*[ %category ]*',
-  body: '✰ %cmd %islimit %isPremium',
-  footer: '\n*[ ᴍᴏʀᴇ ғᴇᴀᴛᴜʀᴇs ᴄᴏᴍᴍɪɴɢ sᴏᴏɴ ]*\n',
+  header: '┌─〔 %category 〕',
+  body: '├ %cmd',
+  footer: '└────\n',
   after: `
-*ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ🦄*
-*ʜᴏᴘᴇ ʏᴏᴜ ᴀʀᴇ ᴇɴᴊᴏʏɪɴɢ🦄*
+*%npmname@*
+${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'game', 'xp', 'stiker', 'shellajaib', 'quotes', 'admin', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'textpro', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
+  let arrayMenu = ['git', 'game', 'xp', 'stiker','quotes', 'admin', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools','anime','videomaker', 'fun', 'database', 'audio','info','owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'Main',
     'game': 'Game',
     'xp': 'Exp & Limit',
+    'anime': 'Anime',
     'sticker': 'Stiker',
-    'shell': 'shell Ajaib',
+    'shell': 'Magic Shells',
     'quotes': 'Quotes',
-    'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
+    'admin': `Admin ${global.opts['restrict'] ? '' : '(Disabled)'}`,
     'group': 'Grup',
     'premium': 'Premium',
     'internet': 'Internet',
@@ -39,84 +41,76 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'nulis': 'MagerNulis & Logo',
     'downloader': 'Downloader',
     'tools': 'Tools',
+    'Video Maker':'videomaker',
     'fun': 'Fun',
     'database': 'Database',
     'vote': 'Voting',
-    'absen': 'Absen',
-    'textpro': 'Textpro',
-    'audio': 'Pengubah Suara',
-    'jadibot': 'Jadi Bot',
+    'audio': 'Voice Changer',
     'info': 'Info',
-    '': 'Tanpa Kategori',
+    '': 'No Category',
   }
   if (teks == 'game') tags = {
-    'game': 'Game'
+    'game': 'الالعاب'
   }
   if (teks == 'xp') tags = {
-    'xp': 'Exp & Limit'
+    'xp': 'النقاط & الحد'
   }
   if (teks == 'stiker') tags = {
-    'sticker': 'Stiker'
+    'sticker': 'ستكرز'
   }
-  if (teks == 'shellajaib') tags = {
-    'shell': 'shell Ajaib'
+  if (teks == 'shell') tags = {
+    'shell': 'قذائف السحر'
   }
   if (teks == 'quotes') tags = {
-    'quotes': 'Quotes'
+    'quotes': 'قتباسات'
   }
   if (teks == 'admin') tags = {
-    'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`
+    'admin': `ادمين ${global.opts['بتقييد'] ? '' : '(ميزات بوت برو)'}`
   }
   if (teks == 'grup') tags = {
-    'group': 'Grup'
+    'group': 'جروب'
   }
   if (teks == 'premium') tags = {
-    'premium': 'Premium'
+    'premium': 'الترقية'
+  }
+  if (teks == 'videomaker') tags = {
+    'videomaker': 'صانع الفيديو'
   }
   if (teks == 'internet') tags = {
-    'internet': 'Internet'
+    'internet': 'إنترنت'
   }
   if (teks == 'anonymous') tags = {
-    'anonymous': 'Anonymous Chat'
+    'anonymous': 'دردشة مجهولة'
   }
   if (teks == 'nulis') tags = {
-    'nulis': 'MagerNulis & Logo'
+    'nulis': 'سحر تصميم & شعار'
   }
   if (teks == 'downloader') tags = {
-    'downloader': 'Downloader'
+    'downloader': 'تنزيل'
   }
   if (teks == 'tools') tags = {
-    'tools': 'Tools'
+    'tools': 'أدوات'
   }
   if (teks == 'fun') tags = {
-    'fun': 'Fun'
+    'fun': 'متعة'
+  }
+  if (teks == 'anime') tags = {
+    'anime': 'انمي'
   }
   if (teks == 'database') tags = {
-    'database': 'Database'
-  }
-  if (teks == 'vote') tags = {
-    'vote': 'Voting',
-    'absen': 'Absen'
-  }
-  if (teks == 'quran') tags = {
-    'quran': 'Al Qur\'an'
+    'database': 'قاعدة البيانات'
   }
   if (teks == 'audio') tags = {
-    'audio': 'Pengubah Suara'
+    'audio': 'مغير الصوت'
   }
-  if (teks == 'jadibot') tags = {
-    'jadibot': 'Jadi Bot'
-  }
-  if (teks == 'info') tags = {
-    'info': 'Info'
-  }
-  if (teks == 'tanpakategori') tags = {
-    '': 'Tanpa Kategori'
+  if (teks == 'vote') tags = {
+    'vote': 'التصويت',
+    'absen': 'أبسن'
   }
   if (teks == 'owner') tags = {
-    'owner': 'Owner',
-    'host': 'Host',
-    'advanced': 'Advanced'
+    'owner': 'المطور',
+    'host': 'مضيف',
+    'advanced': 'متقدم'
   }
 
 
@@ -127,7 +121,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let name = registered ? global.db.data.users[m.sender].name : conn.getName(m.sender)
     let d = new Date(new Date + 3600000)
-    let locale = 'id'
+    let locale = 'ar'
     // d.getTimeZoneOffset()
     // Offset -420 is 18.00
     // Offset    0 is  0.00
@@ -139,11 +133,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       month: 'long',
       year: 'numeric'
     })
-    let dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
-    }).format(d)
     let time = d.toLocaleTimeString(locale, {
       hour: 'numeric',
       minute: 'numeric',
@@ -175,108 +164,116 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `      🔮 ɴᴀɴᴅʜᴜᴛᴛʏ ᴠ3 🔮\n\╭─❑\n\│✅ Version: v3 \n\│✅ Library: Baileys\n\│✅ Runtime: ${uptime} \n\╰❑\n\╭─⭐ 「 INFO USER 」\n\│ 👤 Name: ${name} \n\│ 🔍 Total Features : 100+\n\│ ⚠️ Limit: ${limit} \n\│ 🗓️ Date: ${date} \n\│ 🔰 Exp: ${exp} \n\│ 💎 Level: ${level} \n\│ 🔮 Role: ${role} \n\│ 📟 Storage: 106/128 Gb \n\╰⭐\n\╭─ ❑「 INFORMATION 」❑──\n\│ This bot is still in testing stage\n\│ if there is a bug \ error please\n\│ report it to the owner\n\│\n\╰❑`.trim(),
-          "description": "ᴅᴏɴᴛ sᴘᴀᴍ",
-          "buttonText": "Click Here",
-          "footerText": "ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ᴀᴊᴍᴀʟ-ᴀᴄʜᴜ",
+          "title": `مرحبا بيكم في بوت نيزوكو من تطوير الغربي كيف يمكن مسعدتك
+┌─────❲ *نيزوكو* ❳
+┊
+└─────────────────❋ཻུ۪۪⸙
+        
+        ╔╗╔╗╔══╗╔══╗
+        ║╚╝║║╔╗║╚║║╝
+        ║╔╗║║╠╣║╔║║╗
+        ╚╝╚╝╚╝╚╝╚══╝
+┌─────❲ نيزوكو ❳
+┊☞   ${ucapan()}
+┊☞ 👤 *اسم* : ${name}
+┊☞ 🧭 *زمن* : ${time},
+┊☞ 💫 *الاسبوع* : ${week},
+┊☞ ✅ *تاريخ* : ${date},
+┊☞ 💝 *المطور* : الغربي
+┊☞ 🖌️ *اختصار* : متعدد 
+┊☞ ☮️ *اسم البوت* : نيزوكو
+└─────────────────⸙ \n\ ______`
+          
+           .trim(),
+           "description": "*ممنوع السبام*",
+          "buttonText": "اضغط هنا",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
               "rows": [
                 {
-                  "title": `𝐀𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬`,
-                  "description": "",
-                  "rowId": `${_p}? all`
+                  "title": `support bot `,
+                  "description": "مجموعة دعم",
+                  "rowId": ".git"
                 }, {
-                  "title": "𝐆𝐚𝐦𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬",
-                  "description": "",
-                  "rowId": `${_p}? game`
+                  "title": "🎮الالعاب",
+                  "description": "مميزات العبه",
+                  "rowId": ".? game"
 
                 }, {
-                  "title": "𝐗𝐏",
-                  "description": "",
-                  "rowId": `${_p}? xp`
+                  "title": "🎗️النقاط",
+                  "description": "مستوى الميزات وحد الاستخدام",
+                  "rowId": ".? xp"
 
+                },  {
+                  "title": "🎥صانع الفيديوهات",
+                  "description": "عمل أنواع مختلفة من مقاطع الفيديو",
+                  "rowId": ".? .videomaker"
+
+                },{
+                  "title": "🌺ستيكرز",
+                  "description": "ميزات لصنع الملصقات",
+                  "rowId": ".? stiker"
+                }, { 
+                "title": "💮انمي",
+                "description": "البرنامج المساعد ذات الصلة أنيمي",
+                "rowId": ".? anime"
+              },  {
+                  "title": "🌺اقتباسات",
+                  "description": "يعطيك اقتباسات عشوائية",
+                  "rowId": ".? quote"
                 }, {
-                  "title": "𝐒𝐭𝐢𝐜𝐤𝐞𝐫",
-                  "description": "",
-                  "rowId": `${_p}? stiker`
+                  "title": "🌹أدمن",
+                  "description": "أوامر إدارة المجموعة",
+                  "rowId": ".? admin"
                 }, {
-                  "title": "𝐌𝐚𝐠𝐢𝐜 𝐒𝐡𝐞𝐥𝐥",
-                  "description": "",
-                  "rowId": `${_p}? shellajaib`
+                  "title": "🌹المجموعة",
+                  "description": "مجموعة الأوامر ذات الصلة",
+                  "rowId": ".? grup"
                 }, {
-                  "title": "𝐐𝐨𝐮𝐭𝐞𝐬",
-                  "description": "",
-                  "rowId": `${_p}? quotes`
+                  "title": "⏫الترقية",
+                  "description": "إضافات المستخدمين المتميزة",
+                  "rowId": ".? premium"
                 }, {
-                  "title": "𝐀𝐝𝐦𝐢𝐧",
-                  "description": "",
-                  "rowId": `${_p}? admin`
+                  "title": "🕷️الانترنت",
+                  "description": "الأوامر المتعلقة بالإنترنت",
+                  "rowId": ".? internet"
                 }, {
-                  "title": "𝐆𝐫𝐨𝐮𝐩",
-                  "description": "",
-                  "rowId": `${_p}? grup`
+                  "title": "🦥الهاكر",
+                  "description": "لبدء الدردشة المجهولة",
+                  "rowId": ".? anonymous"
                 }, {
-                  "title": "𝐏𝐫𝐞𝐦𝐢𝐧𝐮𝐦",
-                  "description": "",
-                  "rowId": `${_p}? premium`
+                  "title": "🦋سحر تصميم",
+                  "description": "ميزة الإجابة العشوائية",
+                  "rowId": `.? magicshell`
                 }, {
-                  "title": "𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭",
-                  "description": "",
-                  "rowId": `${_p}? internet`
+                  "title": "🐾صانع اللوغو",
+                  "description": "أوامر Text Maker",
+                  "rowId": ".? nulis"
                 }, {
-                  "title": "𝐀𝐧𝐨𝐧𝐲𝐦𝐨𝐮𝐬",
-                  "description": "",
-                  "rowId": `${_p}? anonymous`
+                  "title": "🌵التحميلات",
+                  "description": "الأوامر تنزيل ",
+                  "rowId": ".? downloader"
                 }, {
-                  "title": "𝐍𝐮𝐥𝐢𝐬 𝐀𝐍𝐝 𝐋𝐨𝐠𝐨",
-                  "description": "",
-                  "rowId": `${_p}? nulis`
+                  "title": "🐲الادوات",
+                  "description": "ميزات الأداة",
+                  "rowId": ".? tools"
                 }, {
-                  "title": "𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫",
-                  "description": "",
-                  "rowId": `${_p}? downloader`
+                  "title": "🐥مغير الصوت",
+                  "description": "لتغيير الصوت",
+                  "rowId": `.? audio`
                 }, {
-                  "title": "𝐓𝐨𝐨𝐥𝐬",
-                  "description": "",
-                  "rowId": `${_p}? tools`
+                  "title": "🐉متعة و كذا",
+                  "description": "لتغيير الصوت",
+                  "rowId": ".? fun"
                 }, {
-                  "title": "𝐅𝐮𝐧",
-                  "description": "",
-                  "rowId": `${_p}? fun`
-                }, {
-                  "title": "𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞",
-                  "description": "",
-                  "rowId": `${_p}? database`
-                }, {
-                  "title": "𝐕𝐨𝐭𝐞 𝐀𝐍𝐝 𝐀𝐛𝐬𝐞𝐧",
-                  "description": "",
-                  "rowId": `${_p}? vote`
-                }, {
-                  "title": "𝐋𝐨𝐠𝐨 𝐌𝐚𝐤𝐞𝐫",
-                  "description": "",
-                  "rowId": `${_p}? textpro`
-                }, {
-                  "title": "𝐀𝐮𝐝𝐢𝐨 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬",
-                  "description": "",
-                  "rowId": `${_p}? audio`
-                }, {
-                  "title": "𝐉𝐚𝐝𝐢 𝐁𝐨𝐭",
-                  "description": "",
-                  "rowId": `${_p}? jadibot`
-                }, {
-                  "title": "𝐈𝐧𝐟𝐨",
-                  "description": "",
-                  "rowId": `${_p}? info`
-                }, {
-                  "title": "𝐓𝐚𝐧𝐩𝐚 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐲",
-                  "description": "",
-                  "rowId": `${_p}? tanpakategori`
-                }, {
-                  "title": "𝐎𝐰𝐧𝐞𝐫",
-                  "description": "",
-                  "rowId": `${_p}? owner`
+                  "title": "🦅اساسيات",
+                  "description": "قاعدة بيانات المستخدم",
+                  "rowId": ".? database"
+                },{
+                  "title": "🤖صاحب البوت",
+                  "description": "ميزات المالك الخاصة",
+                  "rowId": ".? owner"
                 }
               ]
             }
@@ -288,32 +285,30 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         }
       }, {}), { waitForAck: true })
     }
-    // gunakan ini jika kamu menggunakan whatsapp bisnis
+    // use this if you use business whatsapp
     //   throw `
-    // ┌〔 DAFTAR MENU 〕
-    // ├ ${_p + command} all
-    // ├ ${_p + command} game
-    // ├ ${_p + command} xp
-    // ├ ${_p + command} stiker
-    // ├ ${_p + command} shell
+    // ┌〔 قائمة الاوامر 〕
+    // ├ ${_p + command} الكل
+    // ├ ${_p + command} الالعاب
+    // ├ ${_p + command} النقاط
+    // ├ ${_p + command} ستيكر
     // ├ ${_p + command} quotes
-    // ├ ${_p + command} admin
-    // ├ ${_p + command} group
-    // ├ ${_p + command} premium
-    // ├ ${_p + command} internet
-    // ├ ${_p + command} anonymous
-    // ├ ${_p + command} nulis
-    // ├ ${_p + command} downloader
-    // ├ ${_p + command} tools
-    // ├ ${_p + command} fun
-    // ├ ${_p + command} database
-    // ├ ${_p + command} vote
-    // ├ ${_p + command} quran
-    // ├ ${_p + command} audio
-    // ├ ${_p + command} jadibot
-    // ├ ${_p + command} info
-    // ├ ${_p + command} tanpa kategori
-    // ├ ${_p + command} owner
+    // ├ ${_p + command} ادمن
+    // ├ ${_p + command} المجموعة
+    // ├ ${_p + command} الاشتراك
+    // ├ ${_p + command} النت
+    // ├ ${_p + command} الهاكر
+    // ├ ${_p + command} نوليس
+    // ├ ${_p + command} التحميل
+    // ├ ${_p + command} الادوات
+    // ├ ${_p + command} المتعة
+    // ├ ${_p + command} داتا
+    // ├ ${_p + command} التصويت
+    // ├ ${_p + command} القران
+    // ├ ${_p + command} الصوت
+    // ├ ${_p + command} نسخ البوت
+    // ├ ${_p + command} المعلومات
+    // ├ ${_p + command} المالك
     // └────  
     //     `.trim()
     let groups = {}
@@ -330,7 +325,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let header = conn.menu.header || defaultMenu.header
     let body = conn.menu.body || defaultMenu.body
     let footer = conn.menu.footer || defaultMenu.footer
-    let after = conn.menu.after || (conn.user.jid == global.conn.user.jid ? '' : `Dipersembahkan oleh https://wa.me/${global.conn.user.jid.split`@`[0]}`) + defaultMenu.after
+    let after = conn.menu.after || (conn.user.jid == global.conn.user.jid ? '' : `Presented by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + defaultMenu.after
     let _text = [
       before,
       ...Object.keys(tags).map(tag => {
@@ -359,21 +354,21 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       exp: exp - min,
       maxexp: xp,
       totalexp: exp,
-      xp4levelup: max - exp <= 0 ? `Siap untuk *${_p}levelup*` : `${max - exp} XP lagi untuk levelup`,
+      xp4levelup: max - exp <= 0 ? `Ready for *${_p}levelup*` : `${max - exp} More XP for levelup`,
       github: package.homepage ? package.homepage.url || package.homepage : '[unknown github url]',
-      level, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
+      level, limit, name, weton, week, date, time, totalreg, rtotalreg, role,
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ ᴀᴊᴍᴀʟ', 'ᴡʜᴏ ɪs ᴛʜᴇ ᴏᴡɴᴇʀ😯', `${_p}owner`, 'ɢɪᴛ', `${_p}git`, m)
+    await conn.send2ButtonImg(m.chat, await (await fetch("https://user-images.githubusercontent.com/102433984/161562586-a3c8714e-4704-46a6-97e5-bec83b5644c0.gif")).buffer(), text.trim(), '© الغربي ', '.Owner', 'الكل', '.menu', m)
   } catch (e) {
-    conn.reply(m.chat, 'Sorry,The bot is not responding', m)
+    conn.reply(m.chat, 'اسف, حاول مجددا', m)
     throw e
   }
 }
-handler.help = ['menu', 'help', '?']
+handler.help = ['menu', 'help','list','GHRBYB', '?']
 handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
+handler.command = /^(list|menu|help|millie|bot|\?)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
@@ -383,8 +378,6 @@ handler.private = false
 handler.admin = false
 handler.botAdmin = false
 
-handler.fail = null
-handler.exp = 3
 
 module.exports = handler
 
@@ -398,19 +391,19 @@ function clockString(ms) {
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 function ucapan() {
-  const time = moment.tz('Asia/Kolkata').format('HH')
-  res = "Good Morning 🌄"
+  const time = moment.tz('Africa/Morocco').format('HH')
+  res = "صباح الخير 🌄"
   if (time >= 4) {
-    res = "Good Morning 🌞"
+    res = "صباح الخير 🌞"
   }
   if (time > 10) {
-    res = "Good afternoon 🌅"
+    res = "طاب مسائك 🌅"
   }
   if (time >= 15) {
-    res = "Good Evening 🌆"
+    res = "مساء الخير 🌆"
   }
   if (time >= 18) {
-    res = "Good Night 🌌"
+    res = "مساء الخير 🌌"
   }
   return res
 }
